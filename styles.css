@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+:root {
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --white-color:hsl(0, 0%, 100%);
+    --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Outfit;
+    background-color: var(--Very-dark-blue-mainBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card-container{
+    background-color: var(--Very-dark-blue-card-BG);
+    height: auto;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.image-equilibrium{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 15px;
+    margin: 15px;
+    position: absolute;
+}
+
+.square-hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    
+}
+
+.square-hover:hover{
+    background-color: var(--cyan);
+
+    background: rgba(0, 240, 255, 0.7) url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.credit-name:hover, h1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+
+.text-container{
+    color: var(--soft-blue);
+    margin: 0 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text-container h1{
+    color: var(--white-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.text-container h1:hover{
+    color: var(--cyan);
+}
+
+.product-price{
+    color: var(--cyan);
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+
+.price-container img{
+    margin-right: 5px;
+    vertical-align:middle;
+}
+
+.price-container{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between ;
+    font-weight: 600;
+    margin: 15px 0;
+    
+}
+
+.line-divider{
+    width: 85%;
+    height: 1px;
+    background-color: var(--Very-dark-blue-line);
+    margin: 15px ;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--soft-blue);
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 15px;
+}
+
+.avatar{
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    margin-right:20px;
+}
+
+.credit-name{
+    color: var(--white-color);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    position: absolute;
+    bottom: 10px;
+    color: var(--soft-blue);
+  }
+  
+  .attribution a { 
+    color: var(--cyan); 
+  }
